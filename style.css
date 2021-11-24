@@ -1,0 +1,85 @@
+
+            @import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
+            @font-face {
+                font-family: 'Optimus Princeps';
+                font-style: normal;
+                font-weight: 400;
+                src: url('./ressources/OptimusPrinceps.ttf')
+            }
+            
+            body {
+                margin : 0;
+                background: #353535;
+                font-family: 'Open Sans';
+            }
+            p {
+                margin-bottom: 0;
+                margin-top: 15px;
+            }
+            #game {
+                height: 80vh;
+                width: auto;
+                margin: 0 auto;
+                margin-left: 50%;
+                transform: translateX(-50%)
+            }
+            #ui {
+                width: auto;
+                margin: 0 auto;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                text-align: center;
+            }
+            #lvl_wrapper {
+                font-size: 30px;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                margin: 10px 0 15px 0;
+            }
+            #lvl_text {
+                font-style: italic;
+                font-size: 20px;
+            }
+            #lvl {
+                font-family: 'Faster One';
+                color: #f57f17;   
+            }        
+            progress[value] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 500px;
+                height: 10px;
+            }
+            progress[value]::-webkit-progress-bar {
+                background-color: #252525;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #f57f17;
+            }
+            #exp {
+                font-size: 9px;
+                font-style: italic;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                transform: translateY(-12px);
+            }
+            #gameover {
+                position: absolute;
+                animation: gameover 3.5s;
+                background: black;
+                text-align: center;
+                line-height: 1.25;
+                font-family: 'Optimus Princeps';
+                font-size: 180px;
+                color: #d32F2F;
+                width: 100%;
+                height: 200px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                display: none;
+            }
+            @keyframes gameover {
+                0% {opacity: 0}
+                100% { opacity: 1}
+            }
+        
