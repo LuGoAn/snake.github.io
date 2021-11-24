@@ -59,8 +59,8 @@ function keyboardInput(e) {
         case "W":
             snake.vel.move(0,-1) //va en haut
         break
-        case "37":
-        case "37":
+        case 37:
+        case 37:
             snake.vel.move(-1,0) //va a gauche
         break
         case "s":
