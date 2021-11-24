@@ -55,12 +55,12 @@ function update() {
  */
 function keyboardInput(e) {
     switch(e.key) {
-        case "z":
-        case "Z":
+        case "w":
+        case "W":
             snake.vel.move(0,-1) //va en haut
         break
-        case "q":
-        case "Q":
+        case "a":
+        case "A":
             snake.vel.move(-1,0) //va a gauche
         break
         case "s":
